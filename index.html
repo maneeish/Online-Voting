@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Voting System</h1>
+        <p>Select your candidate:</p>
+        <div class="candidates">
+            <div class="candidate">
+                <img src="1.jpg" alt="Nish">
+                <button onclick="vote('Alice')">Vote for Nish</button>
+            </div>
+            <div class="candidate">
+                <img src="2.jpg" alt="Alina">
+                <button onclick="vote('Bob')">Vote for Alina</button>
+            </div>
+            <div class="candidate">
+                <img src="3.jpg" alt="Charlie">
+                <button onclick="vote('Charlie')">Vote for Charlie</button>
+            </div>
+        </div>
+
+        <button class="reset-btn" onclick="resetVotes()">Reset Votes</button>
+
+        <h2>Live Results:</h2>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
